@@ -1,5 +1,8 @@
 .tools/
+.agents/
 __pycache__/
 *.pyc
 node_modules/
 artifacts/
+data/sources/
+data/season-2526-source.csv
