@@ -1,0 +1,8 @@
+{
+  "arsenal": {"name":"사카", "fullName":"Bukayo Saka", "path":"assets/players/saka.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png"},
+  "city": {"name":"홀란", "fullName":"Erling Haaland", "path":"assets/players/haaland.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png"},
+  "chelsea": {"name":"리스 제임스", "fullName":"Reece James", "path":"assets/players/reece-james.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/250x250/p225796.png"},
+  "liverpool": {"name":"반다이크", "fullName":"Virgil van Dijk", "path":"assets/players/vandijk.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/110x140/p97032.png"},
+  "tottenham": {"name":"반더벤", "fullName":"Micky van de Ven", "path":"assets/players/vanderven.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/250x250/p491279.png"},
+  "united": {"name":"브루노", "fullName":"Bruno Fernandes", "path":"assets/players/bruno.png", "sourceUrl":"https://resources.premierleague.com/premierleague/photos/players/250x250/p141746.png"}
+}

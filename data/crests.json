@@ -1,0 +1,122 @@
+{
+  "arsenal": {
+    "code": 3,
+    "name": "Arsenal",
+    "path": "assets/crests/arsenal.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t3.png"
+  },
+  "aston-villa": {
+    "code": 7,
+    "name": "Aston Villa",
+    "path": "assets/crests/aston-villa.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t7.png"
+  },
+  "burnley": {
+    "code": 90,
+    "name": "Burnley",
+    "path": "assets/crests/burnley.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t90.png"
+  },
+  "bournemouth": {
+    "code": 91,
+    "name": "Bournemouth",
+    "path": "assets/crests/bournemouth.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t91.png"
+  },
+  "brentford": {
+    "code": 94,
+    "name": "Brentford",
+    "path": "assets/crests/brentford.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t94.png"
+  },
+  "brighton": {
+    "code": 36,
+    "name": "Brighton",
+    "path": "assets/crests/brighton.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t36.png"
+  },
+  "west-ham": {
+    "code": 21,
+    "name": "West Ham",
+    "path": "assets/crests/west-ham.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t21.png"
+  },
+  "wolves": {
+    "code": 39,
+    "name": "Wolves",
+    "path": "assets/crests/wolves.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t39.png"
+  },
+  "chelsea": {
+    "code": 8,
+    "name": "Chelsea",
+    "path": "assets/crests/chelsea.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t8.png"
+  },
+  "crystal-palace": {
+    "code": 31,
+    "name": "Crystal Palace",
+    "path": "assets/crests/crystal-palace.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t31.png"
+  },
+  "everton": {
+    "code": 11,
+    "name": "Everton",
+    "path": "assets/crests/everton.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t11.png"
+  },
+  "fulham": {
+    "code": 54,
+    "name": "Fulham",
+    "path": "assets/crests/fulham.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t54.png"
+  },
+  "leeds": {
+    "code": 2,
+    "name": "Leeds",
+    "path": "assets/crests/leeds.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t2.png"
+  },
+  "liverpool": {
+    "code": 14,
+    "name": "Liverpool",
+    "path": "assets/crests/liverpool.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t14.png"
+  },
+  "city": {
+    "code": 43,
+    "name": "Man City",
+    "path": "assets/crests/city.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t43.png"
+  },
+  "united": {
+    "code": 1,
+    "name": "Man Utd",
+    "path": "assets/crests/united.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t1.png"
+  },
+  "newcastle": {
+    "code": 4,
+    "name": "Newcastle",
+    "path": "assets/crests/newcastle.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t4.png"
+  },
+  "nottingham-forest": {
+    "code": 17,
+    "name": "Nott'm Forest",
+    "path": "assets/crests/nottingham-forest.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t17.png"
+  },
+  "sunderland": {
+    "code": 56,
+    "name": "Sunderland",
+    "path": "assets/crests/sunderland.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t56.png"
+  },
+  "tottenham": {
+    "code": 6,
+    "name": "Spurs",
+    "path": "assets/crests/tottenham.png",
+    "sourceUrl": "https://resources.premierleague.com/premierleague/badges/100/t6.png"
+  }
+}

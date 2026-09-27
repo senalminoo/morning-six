@@ -1,0 +1,39 @@
+{
+  "eligibleFixtures": 198,
+  "highlightRecords": 198,
+  "missingEligibleFixtures": [],
+  "extraFixtures": [],
+  "duplicateVideoIds": [],
+  "statusCounts": {
+    "metadata_verified": 195,
+    "channel_verified": 3
+  },
+  "scheduleRoundDifferences": [
+    {
+      "fixtureId": "25-26-prem-wolverhampton-wanderers-vs-arsenal",
+      "sourceGameweek": 26,
+      "officialVideoRound": 31,
+      "title": "[프리미어리그] 31R 울버햄튼 vs 아스날 2분 하이라이트"
+    },
+    {
+      "fixtureId": "25-26-prem-manchester-city-vs-crystal-palace",
+      "sourceGameweek": 36,
+      "officialVideoRound": 31,
+      "title": "[프리미어리그] 31R 맨시티 vs 크리스탈 팰리스 2분 하이라이트"
+    },
+    {
+      "fixtureId": "25-26-prem-burnley-vs-manchester-city",
+      "sourceGameweek": 33,
+      "officialVideoRound": 34,
+      "title": "[프리미어리그] 34R 번리 vs 맨시티 2분 하이라이트"
+    },
+    {
+      "fixtureId": "25-26-prem-brighton-hove-albion-vs-chelsea",
+      "sourceGameweek": 33,
+      "officialVideoRound": 34,
+      "title": "[프리미어리그] 34R 브라이튼 vs 첼시 2분 하이라이트"
+    }
+  ],
+  "issues": [],
+  "matchIntegrityPassed": true
+}

@@ -1,0 +1,181 @@
+{
+  "targetMatches": 198,
+  "linkedMatches": 198,
+  "metadataVerifiedMatches": 195,
+  "watchPageUnchecked": [
+    {
+      "fixtureId": "25-26-prem-crystal-palace-vs-tottenham-hotspur",
+      "videoId": "_3xax2OXYU8",
+      "url": "https://www.youtube.com/watch?v=_3xax2OXYU8"
+    },
+    {
+      "fixtureId": "25-26-prem-tottenham-hotspur-vs-crystal-palace",
+      "videoId": "SCpGX8kCYeA",
+      "url": "https://www.youtube.com/watch?v=SCpGX8kCYeA"
+    },
+    {
+      "fixtureId": "25-26-prem-liverpool-vs-wolverhampton-wanderers",
+      "videoId": "VQE2v06xEF8",
+      "url": "https://www.youtube.com/watch?v=VQE2v06xEF8"
+    }
+  ],
+  "missing": [],
+  "rejectedCandidates": [
+    {
+      "videoId": "h4eUpyOzQ0E",
+      "fixtureId": "25-26-prem-arsenal-vs-chelsea",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "MyOu0UHyc-8",
+      "fixtureId": "25-26-prem-sunderland-vs-arsenal",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "gbYWWORg63s",
+      "fixtureId": "25-26-prem-brighton-hove-albion-vs-arsenal",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "T2k5Kqrmv2E",
+      "fixtureId": "25-26-prem-aston-villa-vs-arsenal",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "65b0mEZM6TQ",
+      "fixtureId": "25-26-prem-tottenham-hotspur-vs-aston-villa",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "3LPpRORhObs",
+      "fixtureId": "25-26-prem-brentford-vs-chelsea",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "eg-s_mkreHc",
+      "fixtureId": "25-26-prem-chelsea-vs-brighton-hove-albion",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "E0Cmm9QlvdI",
+      "fixtureId": "25-26-prem-newcastle-united-vs-liverpool",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "5Ef96hAJMx4",
+      "fixtureId": "25-26-prem-brentford-vs-tottenham-hotspur",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "jv6cx03cC8s",
+      "fixtureId": "25-26-prem-manchester-city-vs-afc-bournemouth",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "MjV8eWKPJn8",
+      "fixtureId": "25-26-prem-tottenham-hotspur-vs-newcastle-united",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "4g5AxB8NbqU",
+      "fixtureId": "25-26-prem-fulham-vs-manchester-united",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "9XNQpGXA9vk",
+      "fixtureId": "25-26-prem-liverpool-vs-nottingham-forest",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "pVd0VdhuY1Q",
+      "fixtureId": "25-26-prem-nottingham-forest-vs-tottenham-hotspur",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "Pleqk18wc04",
+      "fixtureId": "25-26-prem-everton-vs-manchester-united",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "NO80CyNf0zI",
+      "fixtureId": "25-26-prem-crystal-palace-vs-manchester-city",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "e84DnrHAP_w",
+      "fixtureId": "25-26-prem-manchester-united-vs-manchester-city",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "OSdTKlPD2t0",
+      "fixtureId": "25-26-prem-fulham-vs-chelsea",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "XpiMht2Z7mk",
+      "fixtureId": "25-26-prem-manchester-city-vs-sunderland",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "WXYtOUMGv9Q",
+      "fixtureId": "25-26-prem-tottenham-hotspur-vs-everton",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "O9-D9vweluQ",
+      "fixtureId": "25-26-prem-afc-bournemouth-vs-liverpool",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    },
+    {
+      "videoId": "VCNttyUt_5E",
+      "fixtureId": "25-26-prem-liverpool-vs-fulham",
+      "reasons": [
+        "different-season-or-date"
+      ]
+    }
+  ],
+  "playbackCheckedMatches": 0,
+  "verificationScope": "Watch-page metadata; not full visual playback of each video."
+}

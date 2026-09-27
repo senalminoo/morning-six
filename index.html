@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111820">
+  <meta name="description" content="2025/26 프리미어리그 380경기 기록과 빅6 198경기의 쿠팡플레이 스포츠 공식 하이라이트를 한곳에서 확인하세요.">
+  <title>모닝 식스 · 빅6 골 다이제스트</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23203c32'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' font-family='Arial' font-weight='bold' fill='%23d7f58b'%3E6%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="data/matches.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#matches">경기 목록으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="모닝 식스 홈"><span class="brand-icon">M6</span><span>MORNING SIX<small>PREMIER LEAGUE MATCH ARCHIVE</small></span></a>
+      <a class="header-link" href="#matches">MATCH INDEX <span>↓</span></a>
+      <span class="demo-badge"><i></i> <span id="edition-badge">2025/26 ARCHIVE</span></span>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>25/26</span> PREMIER LEAGUE · SEOUL</p>
+        <h1 id="hero-title">프리미어리그,<br><em>빅6부터.</em></h1>
+        <p class="hero-description">380경기의 결과와 골 기록.<br>빅6가 등장한 198경기는 공식 2분 하이라이트까지.</p>
+        <a class="hero-link" href="#matches"><span>경기 아카이브 열기</span><b>↘</b></a>
+      </div>
+      <div class="pitch-art ace-board">
+        <div class="ace-board-head"><span>THE SIX / KEY PLAYERS</span><strong>25—26</strong></div>
+        <div class="ace-grid">
+          <button class="ace-card" type="button" data-hero-team="arsenal"><span class="ace-club">ARS</span><img src="assets/players/saka.png" alt="사카"><span class="ace-name"><b>사카</b><small>ARSENAL</small></span></button>
+          <button class="ace-card" type="button" data-hero-team="city"><span class="ace-club">MCI</span><img src="assets/players/haaland.png" alt="홀란"><span class="ace-name"><b>홀란</b><small>MAN CITY</small></span></button>
+          <button class="ace-card" type="button" data-hero-team="chelsea"><span class="ace-club">CHE</span><img src="assets/players/reece-james.png" alt="리스 제임스"><span class="ace-name"><b>리스 제임스</b><small>CHELSEA</small></span></button>
+          <button class="ace-card" type="button" data-hero-team="liverpool"><span class="ace-club">LIV</span><img src="assets/players/vandijk.png" alt="반다이크"><span class="ace-name"><b>반다이크</b><small>LIVERPOOL</small></span></button>
+          <button class="ace-card" type="button" data-hero-team="tottenham"><span class="ace-club">TOT</span><img src="assets/players/vanderven.png" alt="반더벤"><span class="ace-name"><b>반더벤</b><small>TOTTENHAM</small></span></button>
+          <button class="ace-card" type="button" data-hero-team="united"><span class="ace-club">MUN</span><img src="assets/players/bruno.png" alt="브루노 페르난데스"><span class="ace-name"><b>브루노</b><small>MAN UTD</small></span></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sample-notice"><span class="notice-icon" aria-hidden="true">✓</span><p><strong id="edition-notice-title">2025/26 프리미어리그 경기 아카이브입니다.</strong> <span id="edition-notice-copy">빅6 경기의 쿠팡플레이 스포츠 공식 하이라이트를 모았습니다.</span></p></div>
+
+    <section class="digest" id="matches" aria-labelledby="digest-title">
+      <div class="section-heading"><div><p class="eyebrow dark"><span>01</span> THE MATCH ARCHIVE</p><h2 id="digest-title">경기 기록과 공식 하이라이트</h2></div><div class="archive-controls" aria-label="경기 목록 정렬과 필터"><div class="filter-box" id="view-mode-box"><span class="filter-box-label">보기 기준</span><div class="view-switch" role="group" aria-label="경기 보기 기준"><button type="button" class="view-switch-button is-active" data-view-mode="date" aria-pressed="true">날짜별</button><button type="button" class="view-switch-button" data-view-mode="round" aria-pressed="false">라운드별</button></div></div><div class="filter-box" id="filter-value-box"><label class="filter-box-label" id="filter-value-label" for="digest-filter">날짜 선택</label><select id="digest-filter"><option value="all">전체 날짜</option></select></div></div></div>
+      <div class="team-filters" role="group" aria-label="팀별 경기 필터" id="team-filters"></div>
+      <div class="content-grid">
+        <div class="match-column"><p class="results-line" id="results-line" role="status"></p><div id="match-list"></div></div>
+        <aside class="sidebar" aria-label="다이제스트 요약">
+          <section class="brief-card"><div class="aside-heading"><h3>선택한 경기</h3><span aria-hidden="true">LIVE DATA</span></div><p class="aside-caption">필터 결과를 실시간으로 계산합니다</p><div class="stats"><div><strong id="match-count">0</strong><span>MATCHES</span></div><div><strong id="goal-count">0</strong><span>GOALS</span></div></div><div class="brief-bottom"><span class="status-dot"></span>최종 스코어 기준</div></section>
+          <section class="video-card"><span class="mini-label">OFFICIAL VIDEO DESK</span><h3>2분이면 충분한<br>경기의 맥락.</h3><p>쿠팡플레이 스포츠 하이라이트 <strong id="video-count">0</strong>개</p><div id="video-list"></div><p class="video-footnote">각 경기 카드에서도 영상을 열 수 있습니다.<br>한국 시청 기준 · YouTube 새 탭</p></section>
+          <div class="reading-note"><span aria-hidden="true">⌁</span><div><strong>기록을 눌러 자세히 보기</strong><p>스코어 카드를 누르면 골 타임라인이 펼쳐집니다.</p></div></div>
+        </aside>
+      </div>
+    </section>
+    <noscript><p class="empty-state">경기 정보를 보려면 브라우저에서 JavaScript를 허용해주세요.</p></noscript>
+  </main>
+  <footer class="site-footer"><span class="footer-brand">MORNING SIX<span>MATCH ARCHIVE / 25—26</span></span><span>비공식 팬 프로젝트 · 공식 영상 연결 버전<br>모든 시간은 한국 시간(KST) 기준입니다.</span></footer>
+</body>
+</html>

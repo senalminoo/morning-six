@@ -1,0 +1,35 @@
+[
+  {
+    "fixtureId": "25-26-prem-liverpool-vs-manchester-united",
+    "result": [
+      1,
+      2
+    ],
+    "eventTally": [
+      1,
+      2
+    ]
+  },
+  {
+    "fixtureId": "25-26-prem-aston-villa-vs-tottenham-hotspur",
+    "result": [
+      1,
+      2
+    ],
+    "eventTally": [
+      0,
+      2
+    ]
+  },
+  {
+    "fixtureId": "25-26-prem-everton-vs-manchester-city",
+    "result": [
+      3,
+      3
+    ],
+    "eventTally": [
+      3,
+      2
+    ]
+  }
+]
