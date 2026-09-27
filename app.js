@@ -251,5 +251,99 @@
       filters.querySelector("button").focus();
     }
   });
+
+  const chat = document.querySelector("#player-chat");
+  const chatLauncher = chat?.querySelector(".chat-launcher");
+  const chatPanel = chat?.querySelector(".chat-panel");
+  const chatClose = chat?.querySelector(".chat-close");
+  const chatForm = chat?.querySelector("#chat-form");
+  const chatInput = chat?.querySelector("#chat-input");
+  const chatMessages = chat?.querySelector("#chat-messages");
+  const chatHistory = [];
+  const chatApiUrl = window.MORNING_SIX_CHAT_API || "/api/chat";
+
+  function setChatOpen(open) {
+    if (!chat || !chatPanel || !chatLauncher) return;
+    chat.classList.toggle("is-open", open);
+    chatPanel.hidden = !open;
+    chatLauncher.setAttribute("aria-expanded", String(open));
+    if (open) window.setTimeout(() => chatInput?.focus(), 80);
+    else chatLauncher.focus();
+  }
+
+  function appendChatMessage(role, text, sources = []) {
+    if (!chatMessages) return null;
+    const message = document.createElement("div");
+    message.className = `chat-message is-${role}`;
+    const copy = document.createElement("p");
+    copy.textContent = text;
+    message.append(copy);
+    const validSources = sources.filter((source) => {
+      try {
+        return new URL(source.url).hostname.endsWith("namu.wiki");
+      } catch {
+        return false;
+      }
+    }).slice(0, 3);
+    if (validSources.length) {
+      const sourceList = document.createElement("div");
+      sourceList.className = "chat-answer-sources";
+      validSources.forEach((source, index) => {
+        const link = document.createElement("a");
+        link.href = source.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = `출처 ${index + 1} ↗`;
+        sourceList.append(link);
+      });
+      message.append(sourceList);
+    }
+    chatMessages.append(message);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    return message;
+  }
+
+  async function askPlayerChat(question) {
+    const trimmed = question.trim();
+    if (!trimmed || !chatForm || !chatInput) return;
+    appendChatMessage("user", trimmed);
+    chatHistory.push({ role: "user", content: trimmed });
+    chatInput.value = "";
+    chatInput.disabled = true;
+    const submit = chatForm.querySelector("button[type='submit']");
+    submit.disabled = true;
+    const loading = appendChatMessage("assistant", "선수 기록을 확인하고 있어요…");
+    loading?.classList.add("is-loading");
+    try {
+      const response = await fetch(chatApiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: trimmed, history: chatHistory.slice(-5, -1) })
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.error || "답변을 가져오지 못했어요.");
+      loading?.remove();
+      appendChatMessage("assistant", payload.answer, payload.sources || []);
+      chatHistory.push({ role: "assistant", content: payload.answer });
+    } catch (error) {
+      loading?.remove();
+      appendChatMessage("error", error.message || "잠시 후 다시 질문해주세요.");
+    } finally {
+      chatInput.disabled = false;
+      submit.disabled = false;
+      chatInput.focus();
+    }
+  }
+
+  chatLauncher?.addEventListener("click", () => setChatOpen(true));
+  chatClose?.addEventListener("click", () => setChatOpen(false));
+  chatForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    askPlayerChat(chatInput.value);
+  });
+  chat?.querySelector(".chat-suggestions")?.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-chat-question]");
+    if (button) askPlayerChat(button.dataset.chatQuestion);
+  });
   render();
 })();
