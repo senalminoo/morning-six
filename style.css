@@ -326,3 +326,26 @@ summary:hover{background:#f6f8fc}.team>strong,.score>strong{color:#17233b}.score
 /* Restrained brand accent */
 .brand-icon{position:relative;overflow:hidden}.brand-icon:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--accent)}
 .brand-name,.brand-name>span{display:block;color:var(--accent-dark);letter-spacing:.14em}.brand-name>span{display:inline}
+
+/* Local review: improve archive readability without changing the layout */
+.results-line{font-size:11px;line-height:1.65}
+.filter-box-label{font-size:10px}.view-switch-button,.filter-box select,.team-filters button{font-size:12px}
+.match-meta{font-size:10px}.match-meta>span:last-child{font-size:9px}
+.team>strong{font-size:17px}.score small{font-size:9px}
+.expand-row{font-size:12px}.expand-row b{font-size:10px}
+.goal-minute{font-size:13px}.goal-player strong{font-size:14px}.goal-player>span{font-size:11px}.running-score{font-size:11px}
+.report-link{font-size:11px}.data-note,.no-goals{font-size:11px}.no-goals strong{font-size:12px}
+.match-video{font-size:10px}.video-heading strong{font-size:11px}.video-heading>span{font-size:9px}.official-video strong{font-size:13px}.official-video small{font-size:10px}.video-duration{font-size:10px}
+.aside-heading h3{font-size:16px}.aside-heading>span{font-size:8px}.aside-caption,.brief-bottom{font-size:10px}.stats span{font-size:9px}
+
+@media(max-width:740px){
+  .results-line{font-size:10px}.filter-box-label{font-size:9px}.view-switch-button,.filter-box select,.team-filters button{font-size:11px}
+  .match-meta{font-size:9px}.match-meta>span:last-child{font-size:8px}.team>strong{font-size:13px}.score small{font-size:8px}
+  .expand-row{font-size:11px}.goal-minute{font-size:12px}.goal-player strong{font-size:13px}.goal-player>span{font-size:10px}.running-score{font-size:10px}
+  .match-video{font-size:9px}.official-video strong{font-size:12px}.official-video small{font-size:9px}
+  .sidebar .chat-assistant{position:fixed;right:10px;bottom:10px;z-index:60;width:158px;margin:0;pointer-events:none}
+  .sidebar .chat-launcher{pointer-events:auto;width:158px;min-height:82px;grid-template-columns:66px minmax(0,1fr);padding:0}
+  .sidebar .chat-mascot{width:66px;height:82px}.sidebar .chat-mascot img{width:74px}
+  .sidebar .chat-launcher-copy small{font-size:5px}.sidebar .chat-launcher-copy strong{margin-top:5px;font-size:12px}.sidebar .chat-launcher-copy>span{margin-top:4px;font-size:6px;line-height:1.35}
+  .sidebar .chat-panel{position:fixed;right:10px;bottom:10px;width:min(360px,calc(100vw - 20px));max-height:calc(100vh - 20px);pointer-events:auto}
+}
