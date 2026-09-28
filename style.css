@@ -322,3 +322,7 @@ summary:hover{background:#f6f8fc}.team>strong,.score>strong{color:#17233b}.score
 
 .sidebar{position:sticky;top:94px}
 @media(max-width:740px){.sidebar{position:static}}
+
+/* Restrained brand accent */
+.brand-icon{position:relative;overflow:hidden}.brand-icon:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--accent)}
+.brand-name{display:block;color:#17233b;letter-spacing:.14em}.brand-name>span{color:var(--accent-dark)}
