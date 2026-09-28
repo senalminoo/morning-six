@@ -146,6 +146,21 @@ summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:n
   .content-grid{display:block;margin-top:19px}.results-line{font-size:8px}.match-card{margin-bottom:11px}.match-meta{flex-wrap:wrap;padding:12px 14px 0;font-size:7px;gap:4px}.match-meta>span:last-child{font-size:6px}.scoreboard{grid-template-columns:1fr 76px 1fr;gap:5px;padding:22px 8px 19px}.team{gap:6px}.team>strong{font-size:11px}.team-crest-image{width:33px;height:38px}.score>strong{gap:9px;font-size:27px}.score>strong>span{font-size:14px}.expand-row{margin:0 14px}.goal-content{padding:0 14px 10px}.goal-timeline li{grid-template-columns:34px 10px minmax(0,1fr) auto;gap:10px}.goal-timeline li:not(:last-child):after{left:48px}.goal-player strong{font-size:10px}.goal-player>span{font-size:8px}.running-score{padding:6px;font-size:8px}.match-video.has-videos{padding:13px 14px 15px}.official-video{grid-template-columns:29px minmax(0,1fr) auto;gap:9px;padding:10px}.official-video small{white-space:normal;font-size:7px}.video-heading>span{display:none}.sidebar{position:static;padding-top:16px;display:grid;grid-template-columns:1fr;gap:10px}.chat-assistant,.chat-assistant+.brief-card,.video-card{margin-top:0}.chat-launcher{min-height:106px;grid-template-columns:76px minmax(0,1fr) 24px}.chat-mascot{height:90px}.chat-panel{max-width:520px}.chat-messages{height:290px}.reading-note{padding:13px 5px}.site-footer{margin:0 14px;padding:20px 0;flex-direction:column}.footer-brand>span{display:block;margin:6px 0 0}.site-footer>span:last-child{text-align:left}
 }
 
+/* Sidebar assistant replaces the redundant video index */
+.sidebar{position:sticky;top:94px;min-width:0}
+.sidebar .chat-assistant{position:static;width:100%;margin:12px 0 0;background:transparent;border:0;box-shadow:none;pointer-events:auto}
+.sidebar .chat-launcher{width:100%;min-height:148px;grid-template-columns:118px minmax(0,1fr);padding:4px 8px 0 0}
+.sidebar .chat-mascot{width:118px;height:145px}.sidebar .chat-mascot img{width:128px}
+.sidebar .chat-panel{position:fixed;right:max(10px,calc((100vw - 1240px)/2 - 110px));bottom:22px;width:360px}
+@media(max-width:740px){
+  .sidebar{position:static}
+  .sidebar .chat-assistant{margin-top:4px}
+  .sidebar .chat-launcher{width:100%;min-height:118px;grid-template-columns:94px minmax(0,1fr);padding-right:16px}
+  .sidebar .chat-mascot{width:94px;height:116px}.sidebar .chat-mascot img{width:102px}
+  .sidebar .chat-launcher-copy small{font-size:6px}.sidebar .chat-launcher-copy strong{font-size:15px}.sidebar .chat-launcher-copy>span{font-size:7px}
+  .sidebar .chat-panel{right:10px;bottom:10px;width:min(360px,calc(100vw - 20px))}
+}
+
 /* SixKicks: allow the complete sidebar archive to scroll with the document */
 .sidebar{position:static;min-width:0}
 .video-card,#video-list,.video-item,.video-item>span:nth-child(2){min-width:0;max-width:100%}
@@ -304,3 +319,6 @@ summary:hover{background:#f6f8fc}.team>strong,.score>strong{color:#17233b}.score
   .chat-mascot{width:66px;height:82px}.chat-mascot img{width:74px}.chat-launcher-copy small{font-size:5px}.chat-launcher-copy strong{margin-top:5px;font-size:12px}.chat-launcher-copy>span{margin-top:4px;font-size:6px;line-height:1.35}
   .chat-panel{width:min(360px,calc(100vw - 20px));max-height:calc(100vh - 20px)}
 }
+
+.sidebar{position:sticky;top:94px}
+@media(max-width:740px){.sidebar{position:static}}

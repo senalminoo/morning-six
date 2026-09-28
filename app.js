@@ -180,15 +180,6 @@
       <span aria-hidden="true">☀</span><h3>등록된 경기가 없어요.</h3>
       <p>선택한 날짜와 팀에 해당하는 경기가 없습니다.<br>전체 경기 모음에서 다른 경기를 만나보세요.</p>
       <button id="reset-view" class="reset-button">전체 경기로 돌아가기 ↗</button></div>`;
-    const videos = visible.flatMap((match) => videosFor(match).map((video) => ({ match, video })));
-    document.querySelector("#video-count").textContent = videos.length;
-    document.querySelector("#video-list").innerHTML = videos.length ? videos.slice(0, 6).map(({ match, video }, index) =>
-      `<a class="video-item" href="${escapeHTML(video.url)}" target="_blank" rel="noopener noreferrer">
-        <span class="video-number">${String(index + 1).padStart(2, "0")}</span>
-        <span><strong>${escapeHTML(teams[match.home].name)} vs ${escapeHTML(teams[match.away].name)}</strong>
-          <small>${escapeHTML(data.sources[video.source].name)}<br>${escapeHTML(video.title)}</small></span>
-        <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>`).join("") :
-      '<div class="video-empty"><span aria-hidden="true">▷</span><strong>아직 등록된 영상이 없어요</strong><small>다른 날짜나 팀을 선택해보세요.</small></div>';
   }
 
   filters.innerHTML = [{ id: "big6", name: "빅6 전체", color: "#203c32" },
