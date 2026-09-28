@@ -1,4 +1,4 @@
-# 프로젝트 PRD: Morning Six 25/26
+# 프로젝트 PRD: SixKicks 25/26
 
 ## 목표
 

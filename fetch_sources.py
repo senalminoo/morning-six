@@ -19,7 +19,7 @@ def download(item):
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists() and target.stat().st_size:
         return relative
-    with urlopen(Request(url, headers={'User-Agent':'MorningSix/1.0'}), timeout=40) as response:
+    with urlopen(Request(url, headers={'User-Agent':'SixKicks/1.0'}), timeout=40) as response:
         body = response.read()
     if relative.endswith('.png') and not body.startswith(b'\x89PNG\r\n\x1a\n'):
         raise ValueError(f'Not a PNG: {url}')

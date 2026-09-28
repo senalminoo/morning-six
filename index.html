@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111820">
+  <meta name="theme-color" content="#e8eff6">
   <meta name="description" content="2025/26 프리미어리그 380경기 기록과 빅6 198경기의 쿠팡플레이 스포츠 공식 하이라이트를 한곳에서 확인하세요.">
-  <title>모닝 식스 · 빅6 골 다이제스트</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23203c32'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' font-family='Arial' font-weight='bold' fill='%23d7f58b'%3E6%3C/text%3E%3C/svg%3E">
+  <title>SixKicks · 빅6 매치 아카이브</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2334415f'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='25' font-family='Arial' font-weight='bold' fill='%2370c9bd'%3ESK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="data/matches.js" defer></script>
   <script src="app.js" defer></script>
@@ -15,7 +18,7 @@
   <a class="skip-link" href="#matches">경기 목록으로 건너뛰기</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="모닝 식스 홈"><span class="brand-icon">M6</span><span>MORNING SIX<small>PREMIER LEAGUE MATCH ARCHIVE</small></span></a>
+      <a class="brand" href="index.html" aria-label="SixKicks 홈"><span class="brand-icon">SK</span><span>SIXKICKS<small>PREMIER LEAGUE MATCH ARCHIVE</small></span></a>
       <a class="header-link" href="#matches">MATCH INDEX <span>↓</span></a>
       <span class="demo-badge"><i></i> <span id="edition-badge">2025/26 ARCHIVE</span></span>
     </div>
@@ -30,14 +33,14 @@
         <a class="hero-link" href="#matches"><span>경기 아카이브 열기</span><b>↘</b></a>
       </div>
       <div class="pitch-art ace-board">
-        <div class="ace-board-head"><span>THE SIX / KEY PLAYERS</span><strong>25—26</strong></div>
+        <div class="ace-board-head"><span class="ace-board-guide"><small>TEAM FILTER</small><b>선수를 눌러 팀 경기만 보기</b></span><strong>6 CLUBS · 25/26</strong></div>
         <div class="ace-grid">
-          <button class="ace-card" type="button" data-hero-team="arsenal" aria-label="아스날 경기 보기"><span class="ace-club">ARS</span><img src="assets/players/saka.png" alt=""></button>
-          <button class="ace-card" type="button" data-hero-team="city" aria-label="맨체스터 시티 경기 보기"><span class="ace-club">MCI</span><img src="assets/players/haaland.png" alt=""></button>
-          <button class="ace-card" type="button" data-hero-team="chelsea" aria-label="첼시 경기 보기"><span class="ace-club">CHE</span><img src="assets/players/reece-james.png" alt=""></button>
-          <button class="ace-card" type="button" data-hero-team="liverpool" aria-label="리버풀 경기 보기"><span class="ace-club">LIV</span><img src="assets/players/vandijk.png" alt=""></button>
-          <button class="ace-card" type="button" data-hero-team="tottenham" aria-label="토트넘 경기 보기"><span class="ace-club">TOT</span><img src="assets/players/vanderven.png" alt=""></button>
-          <button class="ace-card" type="button" data-hero-team="united" aria-label="맨체스터 유나이티드 경기 보기"><span class="ace-club">MUN</span><img src="assets/players/bruno.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="arsenal" aria-label="아스날 경기 보기" aria-pressed="false"><span class="ace-club">ARS</span><img src="assets/players/saka.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="city" aria-label="맨체스터 시티 경기 보기" aria-pressed="false"><span class="ace-club">MCI</span><img src="assets/players/haaland.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="chelsea" aria-label="첼시 경기 보기" aria-pressed="false"><span class="ace-club">CHE</span><img src="assets/players/reece-james.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="liverpool" aria-label="리버풀 경기 보기" aria-pressed="false"><span class="ace-club">LIV</span><img src="assets/players/vandijk.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="tottenham" aria-label="토트넘 경기 보기" aria-pressed="false"><span class="ace-club">TOT</span><img src="assets/players/vanderven.png" alt=""></button>
+          <button class="ace-card" type="button" data-hero-team="united" aria-label="맨체스터 유나이티드 경기 보기" aria-pressed="false"><span class="ace-club">MUN</span><img src="assets/players/bruno.png" alt=""></button>
         </div>
       </div>
     </section>
@@ -50,33 +53,6 @@
       <div class="content-grid">
         <div class="match-column"><p class="results-line" id="results-line" role="status"></p><div id="match-list"></div></div>
         <aside class="sidebar" aria-label="다이제스트 요약">
-          <section class="chat-assistant" id="player-chat" aria-label="선수 정보 AI 챗봇">
-            <button class="chat-launcher" type="button" aria-expanded="false" aria-controls="player-chat-panel">
-              <span class="chat-mascot"><img src="assets/chat/match-lion.png" alt="" width="86" height="87"></span>
-              <span class="chat-launcher-copy"><small>PLAYER DESK · AI</small><strong>선수가 궁금해?</strong><span>궁금할 때만 라이언에게 물어보세요</span></span>
-              <span class="chat-launcher-arrow" aria-hidden="true">↗</span>
-            </button>
-            <div class="chat-panel" id="player-chat-panel" hidden>
-              <header class="chat-header">
-                <img src="assets/chat/match-lion.png" alt="" width="54" height="55">
-                <div><small>MATCH LION · ONLINE</small><strong>라이언의 선수 노트</strong></div>
-                <button class="chat-close" type="button" aria-label="선수 챗봇 닫기">×</button>
-              </header>
-              <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
-                <div class="chat-message is-assistant"><p>궁금한 프리미어리그 선수를 물어보세요. 핵심 정보와 최근 이적 내용을 짧게 알려드릴게요.</p></div>
-              </div>
-              <div class="chat-suggestions" aria-label="추천 질문">
-                <button type="button" data-chat-question="부카요 사카가 누구야?">사카가 누구야?</button>
-                <button type="button" data-chat-question="반더벤은 어디에서 얼마에 이적했어?">반더벤 이적 정보</button>
-              </div>
-              <form class="chat-form" id="chat-form">
-                <label class="sr-only" for="chat-input">선수 질문 입력</label>
-                <input id="chat-input" name="question" type="text" maxlength="160" autocomplete="off" placeholder="예: 요케레스는 어디서 왔어?" required>
-                <button type="submit" aria-label="질문 보내기">↑</button>
-              </form>
-              <p class="chat-source-note">나무위키 검색 기반 · 중요한 정보는 원문 링크로 확인하세요.</p>
-            </div>
-          </section>
           <section class="brief-card"><div class="aside-heading"><h3>선택한 경기</h3><span aria-hidden="true">LIVE DATA</span></div><p class="aside-caption">필터 결과를 실시간으로 계산합니다</p><div class="stats"><div><strong id="match-count">0</strong><span>MATCHES</span></div><div><strong id="goal-count">0</strong><span>GOALS</span></div></div><div class="brief-bottom"><span class="status-dot"></span>최종 스코어 기준</div></section>
           <section class="video-card"><span class="mini-label">OFFICIAL VIDEO DESK</span><h3>2분이면 충분한<br>경기의 맥락.</h3><p>쿠팡플레이 스포츠 하이라이트 <strong id="video-count">0</strong>개</p><div id="video-list"></div><p class="video-footnote">각 경기 카드에서도 영상을 열 수 있습니다.<br>한국 시청 기준 · YouTube 새 탭</p></section>
           <div class="reading-note"><span aria-hidden="true">⌁</span><div><strong>기록을 눌러 자세히 보기</strong><p>스코어 카드를 누르면 골 타임라인이 펼쳐집니다.</p></div></div>
@@ -85,6 +61,33 @@
     </section>
     <noscript><p class="empty-state">경기 정보를 보려면 브라우저에서 JavaScript를 허용해주세요.</p></noscript>
   </main>
-  <footer class="site-footer"><span class="footer-brand">MORNING SIX<span>MATCH ARCHIVE / 25—26</span></span><span>비공식 팬 프로젝트 · 공식 영상 연결 버전<br>모든 시간은 한국 시간(KST) 기준입니다.</span></footer>
+  <section class="chat-assistant" id="player-chat" aria-label="선수 정보 생성형 AI 챗봇">
+    <button class="chat-launcher" type="button" aria-expanded="false" aria-controls="player-chat-panel">
+      <span class="chat-mascot"><img src="assets/chat/match-lion.png" alt="" width="116" height="117"></span>
+      <span class="chat-launcher-copy"><small>GENERATIVE AI · ONLINE</small><strong>무엇이든 물어봐</strong><span>선수와 경기를 라이언에게 물어보세요</span></span>
+      <span class="chat-launcher-arrow" aria-hidden="true">↗</span>
+    </button>
+    <div class="chat-panel" id="player-chat-panel" hidden>
+      <header class="chat-header">
+        <img src="assets/chat/match-lion.png" alt="" width="54" height="55">
+        <div><small>MATCH LION · ONLINE</small><strong>라이언의 선수 노트</strong></div>
+        <button class="chat-close" type="button" aria-label="선수 챗봇 닫기">×</button>
+      </header>
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+        <div class="chat-message is-assistant"><p>궁금한 프리미어리그 선수를 물어보세요. 핵심 정보와 최근 이적 내용을 짧게 알려드릴게요.</p></div>
+      </div>
+      <div class="chat-suggestions" aria-label="추천 질문">
+        <button type="button" data-chat-question="부카요 사카가 누구야?">사카가 누구야?</button>
+        <button type="button" data-chat-question="반더벤은 어디에서 얼마에 이적했어?">반더벤 이적 정보</button>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <label class="sr-only" for="chat-input">선수 질문 입력</label>
+        <input id="chat-input" name="question" type="text" maxlength="160" autocomplete="off" placeholder="예: 요케레스는 어디서 왔어?" required>
+        <button type="submit" aria-label="질문 보내기">↑</button>
+      </form>
+      <p class="chat-source-note">나무위키 검색 기반 · 중요한 정보는 원문 링크로 확인하세요.</p>
+    </div>
+  </section>
+  <footer class="site-footer"><span class="footer-brand">SIXKICKS<span>MATCH ARCHIVE / 25—26</span></span><span>비공식 팬 프로젝트 · 공식 영상 연결 버전<br>모든 시간은 한국 시간(KST) 기준입니다.</span></footer>
 </body>
 </html>

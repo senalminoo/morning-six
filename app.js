@@ -163,6 +163,11 @@
       : (selectedRound === "all" ? "전체 라운드" : `${selectedRound}라운드`);
     document.querySelector("#results-line").textContent = `${selectedTeam === "all" ? "리그 전체" : selectedTeam === "big6" ? "빅6 전체" : teams[selectedTeam].name + " 경기"} ${visible.length}경기 · ${activeFilter} · ${data.edition} · 한국 시간 기준${auditSeason ? ` · 하이라이트 ${verifiedTargets}/${videoTargets.length}` : ""}`;
     filters.querySelectorAll("button").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.team === selectedTeam)));
+    document.querySelectorAll(".ace-card[data-hero-team]").forEach((button) => {
+      const active = button.dataset.heroTeam === selectedTeam;
+      button.classList.toggle("is-selected", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
     filterSelect.value = viewMode === "date" ? selectedDate : selectedRound;
     filterSelect.setAttribute("aria-label", viewMode === "date" ? "날짜 선택" : "라운드 선택");
     filterValueLabel.textContent = viewMode === "date" ? "날짜 선택" : "라운드 선택";
