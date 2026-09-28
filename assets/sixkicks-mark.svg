@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">SixKicks 6K symbol</title>
+  <path fill="#34415f" d="M9 3h51l-6 58H3z"/>
+  <path fill="#159b8c" d="M3 57h51l-.45 4H3z"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="6" d="M29 15c-8.5-.5-14 6.2-14 18.1 0 11.3 4.8 17 11.2 17 6.1 0 9.5-4 9.5-9.1 0-5.4-3.6-9-8.5-9-5.3 0-8.4 3.3-9.5 7.2"/>
+    <path stroke-width="5.5" d="M43 16l-3.6 34M42 34l11.5-17M41.8 34L51 50"/>
+  </g>
+</svg>
